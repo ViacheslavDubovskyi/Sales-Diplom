@@ -1,11 +1,9 @@
 package views;
 
-
 import java.util.Scanner;
 
 // View
 public class SalesView {
-
 
     String title;
     String name;
@@ -15,7 +13,6 @@ public class SalesView {
 
     // Здесь, создайте конструктор данного класса,
     // который в параметре содержит переменную типа модели.
-
 
     public void getInputs() {
 

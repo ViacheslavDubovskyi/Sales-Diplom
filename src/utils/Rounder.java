@@ -1,13 +1,11 @@
 package utils;
 
-import java.math.BigDecimal;
-import java.math.RoundingMode;
+import java.text.DecimalFormat;
 
 public class Rounder {
 
-    public static BigDecimal getRoundValue(double value) {
-        BigDecimal result = new BigDecimal(value);
-        result = result.setScale(2, RoundingMode.UP);
-        return result;
+    public static String getRoundValue(double value) {
+        DecimalFormat roundValue = new DecimalFormat("#.##");
+        return roundValue.format(value);
     }
 }

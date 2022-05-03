@@ -1,5 +1,6 @@
 package views;
 
+import models.Product;
 import java.util.Scanner;
 
 // View
@@ -13,6 +14,11 @@ public class SalesView {
 
     // Здесь, создайте конструктор данного класса,
     // который в параметре содержит переменную типа модели.
+    Product model;
+
+    public SalesView(Product model) {
+        this.model = model;
+    }
 
     public void getInputs() {
 
@@ -22,7 +28,6 @@ public class SalesView {
         // Здесь, реализуйте вывод сообщения о необходимсоти
         // ввода соответствующего значения, валидацью значения
         // через валидатор, установку валидного значения через модель.
-
 
         title = "Введите количество: ";
         // Здесь, реализуйте вывод сообщения о необходимсоти
